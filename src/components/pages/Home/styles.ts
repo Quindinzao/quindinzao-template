@@ -1,9 +1,12 @@
 // External libraries
 import styled from 'styled-components'
 
+// Styled
+import theme from '../../../styles/theme'
+
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   padding: 5rem;
 
@@ -12,39 +15,57 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const SidebarContent = styled.div`
-  width: 17.5rem;
-  height: 100%;
-
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-
-  background-color: transparent;
-
-  @media screen and (max-width: 768px) {
-    width: fit-content;
-    height: fit-content;
-  }
-`
-
 export const Content = styled.div`
   width: 100%;
   height: 100%;
 
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+`
+
+export const Row = styled.div`
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+`
+
+export const AvatarContent = styled.div`
+  width: 200px;
+  height: 200px;
+
+  margin-right: 51px;
+`
+
+export const Avatar = styled.div`
+  width: 200px;
+  height: 200px;
+
+  background-color: ${theme.colors.gray_600};
+
+  border-radius: 100px;
+`
+
+export const Column = styled.div`
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+`
 
-  h2 {
-    text-align: center;
-    margin-top: 40px;
-  }
+export const Grid = styled.div`
+  width: 100%;
 
-  h5 {
-    text-align: center;
-    margin-top: 1.5rem;
-    line-height: 32px;
-  }
+  margin-top: 51px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 51px;
 `

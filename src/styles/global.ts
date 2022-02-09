@@ -34,39 +34,32 @@ export default createGlobalStyle`
     p {
       font-size: 1rem;
       font-family: Roboto;
-      color: ${theme.colors.text}
     }
 
     h1 {
       font-size: 3rem;
       font-family: Roboto;
-      color: ${theme.colors.primary};
     }
     h2 {
       font-size: 2.5rem;
       font-family: Roboto;
-      color: ${theme.colors.primary};
     }
     h3 {
       font-size: 2rem;
       font-family: Roboto;
-      color: ${theme.colors.text};
     }
     h4 {
       font-size: 1.75rem;
       font-family: Roboto;
-      color: ${theme.colors.text};
     }
     h5 {
       font-size: 1.4rem;
       font-family: Roboto;
-      color: ${theme.colors.text};
     }
     h6 {
       font-size: 1rem;
       font-family: Roboto;
       font-weight: 500;
-      color: ${theme.colors.text};
     }
   }
 
@@ -86,7 +79,7 @@ export default createGlobalStyle`
   .react-modal-content {
     width: calc(100% - 5rem);
     max-width: 576px;
-    background: ${theme.colors.gray_700};
+    background: ${theme.colors.gray_600};
     padding: 3rem;
     position: relative;
     border-radius: 1rem;

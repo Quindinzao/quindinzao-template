@@ -1,25 +1,50 @@
 // External libraries
 import React from 'react'
+import theme from '../../../styles/theme'
 
 // Components
-import Sidebar from '../../common/Sidebar'
+import Card from '../../common/Card'
 
 // Styled
 import {
-  SidebarContent,
+  Avatar,
+  AvatarContent,
+  Column,
   Container,
-  Content
+  Content,
+  Grid,
+  Row
 } from './styles'
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <SidebarContent>
-        <Sidebar home={true} />
-      </SidebarContent>
       <Content>
-        <h2>ReactJS Structure</h2>
-        <h5>A ReactJS + Next.js structure made by Quindinzão.</h5>
+        <Row>
+          <AvatarContent>
+            <Avatar />
+          </AvatarContent>
+          <Column>
+            <h5>Hello, traveller 🖖</h5>
+            <h5>My name is João, I’m 20 and I'm a React developer.</h5>
+          </Column>
+        </Row>
+        <Grid>
+          <Card
+            height='100%'
+            minHeight='240px'
+            width='100%'
+            background={theme.colors.gray_600}
+            borderRadius='24px'
+          ></Card>
+          <Card
+            height='100%'
+            minHeight='240px'
+            width='100%'
+            background={`linear-gradient(${theme.colors.salmon}, ${theme.colors.pink})`}
+            borderRadius='24px'
+          ></Card>
+        </Grid>
       </Content>
     </Container>
   )
