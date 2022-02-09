@@ -32,14 +32,14 @@ const Home: React.FC = () => {
         <Grid>
           <Card
             height='100%'
-            minHeight='240px'
+            minHeight='320px'
             width='100%'
             background={theme.colors.gray_600}
             borderRadius='24px'
           ></Card>
           <Card
             height='100%'
-            minHeight='240px'
+            minHeight='320px'
             width='100%'
             background={`linear-gradient(${theme.colors.salmon}, ${theme.colors.pink})`}
             borderRadius='24px'

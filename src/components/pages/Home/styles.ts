@@ -68,4 +68,11 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 51px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 24px;
+
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
 `
